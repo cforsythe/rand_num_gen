@@ -1,0 +1,17 @@
+<div *ngIf="messageService.messages.length" class="alert alert-danger">
+  <div *ngFor="let message of messageService.messages">
+    <strong>Error: {{ message }}</strong>
+  </div>
+</div>
+<div>
+  <input #r_start type='text' placeholder="Start Range">
+</div>
+<div>
+  <input #r_stop type='text' placeholder="Stop Range">
+</div>
+<div>
+  <button (click)='generateNumber(r_start.value, r_stop.value)'>Generate</button>
+</div>
+<div *ngIf="numberGenerated">
+  {{ generatedNumber}}
+</div>
