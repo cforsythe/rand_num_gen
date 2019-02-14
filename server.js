@@ -1,4 +1,3 @@
-//Install express server
 import express, { static } from 'express';
 import { join } from 'path';
 
