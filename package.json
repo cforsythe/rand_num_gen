@@ -24,11 +24,13 @@
     "ajv": "^6.9.1",
     "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
+    "express": "^4.16.4",
     "jquery": "^3.3.1",
+    "path": "^0.12.7",
     "popper.js": "^1.14.7",
     "rxjs": "~6.2.0",
-    "zone.js": "~0.8.26",
-    "typescript": "~2.9.2"
+    "typescript": "~2.9.2",
+    "zone.js": "~0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.8.0",
