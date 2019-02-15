@@ -3,15 +3,19 @@
     <strong>Error: {{ message }}</strong>
   </div>
 </div>
-<div>
-  <input #r_start type='text' placeholder="Start Range">
+<div class="input-area">
+  <div class='numberin'>
+    <input #r_start type='text' placeholder="Start Range">
+  </div>
+  <div class='numberin'>
+    <input #r_stop type='text' placeholder="Stop Range">
+  </div>
+  <div>
+    <button (click)='generateNumber(r_start.value, r_stop.value)'>Generate</button>
+  </div>
 </div>
-<div>
-  <input #r_stop type='text' placeholder="Stop Range">
-</div>
-<div>
-  <button (click)='generateNumber(r_start.value, r_stop.value)'>Generate</button>
-</div>
-<div *ngIf="numberGenerated">
-  {{ generatedNumber}}
+
+<div id='gen-div' *ngIf="numberGenerated">
+  <span id='comment'>The Jedi Order chooses...</span><br>
+  <span id='generated'>{{ generatedNumber}}</span>
 </div>

@@ -1,0 +1,29 @@
+input{
+    height: 10vw;
+    font-size: 10vw;
+    width: 100%
+}
+.numberin{
+    display: inline-block;
+    width: 50%;
+}
+.input-area{
+    width: 90%;
+    margin: auto;
+}
+button{
+    height: 50px;
+    width: 100%;
+    background-color: #323232;
+    color: white;
+}
+#comment{
+    font-size: 5vw;
+}
+#generated{
+    font-size: 10vw;
+}
+#gen-div{
+    text-align: center;
+    padding: 30px;
+}
