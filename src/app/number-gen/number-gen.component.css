@@ -1,7 +1,8 @@
 input{
     height: 10vw;
     font-size: 10vw;
-    width: 100%
+    width: 100%;
+    transform: translateZ(0);
 }
 .numberin{
     display: inline-block;
